@@ -212,6 +212,9 @@ li {
   width: 40%;
   object-fit: cover; }
 
+/*=================================
+  Header styling starts here
+=================================*/
 header {
   padding: 15px 0; }
   header .wrapper {
@@ -294,6 +297,12 @@ header {
 .hamburger {
   display: none; }
 
+/*=================================
+  Header styling ends here
+=================================*/
+/*=================================
+  Banner styling starts here
+=================================*/
 .banner-img {
   position: relative;
   height: 540px;
@@ -343,5 +352,134 @@ header {
     color: #555454;
     font-size: 12px;
     line-height: 1.7; }
+
+/*=================================
+  Banner styling ends here
+=================================*/
+/*=================================
+  Store features styling starts here
+=================================*/
+.store_features {
+  background-color: #000;
+  color: #fff; }
+
+.features_menu {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .features_menu .features_list {
+    flex-basis: 20%;
+    display: flex;
+    gap: 15px;
+    padding: 28px 15px;
+    background-color: #373737;
+    border-radius: 2px; }
+    .features_menu .features_list .feature_icon {
+      display: flex;
+      text-indent: -9999px; }
+      .features_menu .features_list .feature_icon::before {
+        font-family: "FontAwesome";
+        color: #A0CE51;
+        font-size: 15px;
+        text-indent: 0; }
+
+.feature_details h3 {
+  font-family: serif;
+  font-size: 17px;
+  font-weight: 600; }
+.feature_details span {
+  font-size: 11px; }
+
+.tempo::before {
+  content: "\f0d1"; }
+
+.certified::before {
+  content: "\f2b9"; }
+
+.money::before {
+  content: "\f0d6"; }
+
+.recycle::before {
+  content: "\f1b8"; }
+
+/*=================================
+  Store features styling ends here
+=================================*/
+/*=================================
+  Selling styling starts here
+=================================*/
+.selling {
+  padding: 100px 0; }
+  .selling .wrapper {
+    text-align: center; }
+    .selling .wrapper h3 {
+      padding-bottom: 15px;
+      font-family: serif;
+      font-size: 30px; }
+    .selling .wrapper .logoleaf {
+      width: 24%;
+      margin: 0 auto; }
+
+.products {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .products li {
+    flex-basis: 24%; }
+
+.grocery {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px; }
+  .grocery .grocery-heading {
+    color: #CACACA;
+    font-size: 11px; }
+  .grocery h4 {
+    font-family: serif;
+    font-size: 14px;
+    font-weight: 600; }
+  .grocery span {
+    font-size: 12px; }
+
+.stars {
+  display: flex;
+  width: 30%;
+  margin: 0 auto; }
+
+.stars li {
+  display: flex;
+  text-indent: -9999px; }
+
+.stars li::after {
+  font-family: "FontAwesome";
+  content: "\f005";
+  color: #CACACA;
+  font-size: 12px;
+  text-indent: 0; }
+
+/*=================================
+  Selling styling ends here
+=================================*/
+/*=================================
+  trending styling starts here
+=================================*/
+.trending {
+  padding: 100px 0; }
+  .trending .wrapper {
+    text-align: center; }
+    .trending .wrapper h3 {
+      padding-bottom: 15px;
+      font-family: serif;
+      font-size: 30px; }
+    .trending .wrapper .logoleaf {
+      width: 24%;
+      margin: 0 auto; }
+
+/*=================================
+  trending styling ends here
+=================================*/
 
 /*# sourceMappingURL=style.css.map */

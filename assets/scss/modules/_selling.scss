@@ -1,0 +1,72 @@
+/*=================================
+  Selling styling starts here
+=================================*/
+.selling {
+    padding: 100px 0;
+
+    .wrapper {
+        text-align: center;
+
+        h3 {
+            padding-bottom: 15px;
+            font-family: serif;
+            font-size: 30px;
+        }
+
+        .logoleaf {
+            width: 24%;
+            margin: 0 auto;
+        }
+    }
+}
+
+.products {
+    padding-top: 30px;
+    @include flex-styling(space-between,center);
+
+    li {
+        flex-basis: 24%;
+    }
+}
+
+.grocery {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    .grocery-heading {
+        color: $grey3;
+        font-size: 11px;
+    }
+
+    h4 {
+        font-family: serif;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    
+    span { font-size: 12px; }
+}
+
+.stars {
+    display: flex; 
+    width: 30%;
+    margin: 0 auto;
+    }
+
+.stars li {
+  display: flex;
+  text-indent: -9999px;
+}
+
+.stars li::after { 
+  font-family: "FontAwesome";
+  content: "\f005";
+  color: $grey3;
+  font-size: 12px;
+  text-indent: 0;
+}
+/*=================================
+  Selling styling ends here
+=================================*/
