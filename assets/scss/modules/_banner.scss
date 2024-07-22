@@ -7,10 +7,11 @@
   width: 100%;
   @include flex-styling(flex-end, flex-end);
 
-   &:before {
+  &:before {
     content: "";
     background-image: linear-gradient(
-        rgba(255, 254, 254, 0.904), rgb(252, 252, 252)
+        rgba(255, 254, 254, 0.904),
+        rgb(252, 252, 252)
       ),
       url("../images/leaves-free-img.png");
     width: 100%;
@@ -26,43 +27,49 @@
   }
 }
 
-.banner-content { 
-    position: relative; 
-    left: 15px;
-    bottom: 65px;
+.banner-content {
+  position: relative;
+  left: 15px;
+  bottom: 65px;
 
-    .wrapper {
-        gap: 55px;
-        @include flex-styling(normal, center)
-    }
+  .wrapper {
+    gap: 55px;
+    @include flex-styling(normal, center);
+  }
+}
+
+.organic-productContent {
+  flex-basis: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: $black;
+
+  span {
+    font-family: serif;
+    font-size: 15px;
+    font-weight: 600;
   }
 
-  .organic-productContent {
-    flex-basis: 70%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    color: $black;
-
-    span {
-        font-family: serif;
-        font-size: 15px;
-        font-weight: 600;
-    }
-
-    h2 {
-        font-family: serif;
-        font-size: 40px;
-        font-weight: 600;
-    }
-
-    p {
-        color: $grey1;
-        font-size: 12px;
-        line-height: 1.7;
-    }
-
+  h2 {
+    font-family: serif;
+    font-size: 40px;
+    font-weight: 600;
   }
+
+  p {
+    color: $grey1;
+    font-size: 12px;
+    line-height: 1.7;
+  }
+}
+
+.banner-content .btn {
+  width: 30%;
+  &::before {
+    @include icon-style("\f07a", $white, 10px);
+  }
+}
 /*=================================
   Banner styling ends here
 =================================*/

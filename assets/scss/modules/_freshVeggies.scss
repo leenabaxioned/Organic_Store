@@ -1,0 +1,117 @@
+.fresh-veggies {
+  padding-top: 100px;
+  background-color: $offwhite;
+
+  .veggies {
+    @include flex-styling(space-between, center);
+  }
+}
+
+.veggie-img {
+  position: relative;
+  height: 263px;
+  width: 100%;
+  flex-basis: 30%;
+  @include flex-styling(center, center);
+}
+
+.lemon:before {
+  content: "";
+  background-image: url("../images/product11-free-img.jpeg");
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.cabbage:before {
+  content: "";
+  background-image: url("../images/product13-free-img.jpeg");
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.peas:before {
+  content: "";
+  background-image: url("../images/product17-free-img.jpeg");
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.veggie-content {
+  position: relative;
+  left: 5px;
+  bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+
+  h3 {
+    font-family: serif;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  p {
+    color: $grey2;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+}
+
+.veggie-content .btn {
+  width: 35%;
+  &::after {
+    @include icon-style("\f061", $white, 10px);
+  }
+}
+
+.discount {
+  @include flex-styling(space-between, center);
+  padding: 40px 0;
+  background-color: $black;
+  color: $white;
+
+  h3 {
+    font-family: serif;
+    font-size: 25px;
+    font-weight: 600;
+  }
+}
+
+.discount .btn {
+    &::before {
+      @include icon-style("\f07a", $white, 10px);
+    }
+  }
+
+  .tryfree {
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: serif;
+    text-align: center;
+  }

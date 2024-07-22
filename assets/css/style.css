@@ -181,7 +181,6 @@ li {
   margin: 0 auto; }
 
 .btn {
-  width: 25%;
   display: flex;
   gap: 15px;
   padding: 10px 15px;
@@ -196,12 +195,6 @@ li {
     border: 1px solid #77A131;
     background-color: transparent;
     color: #77A131; }
-  .btn::before {
-    font-family: "FontAwesome";
-    content: "";
-    color: #fff;
-    font-size: 10px;
-    text-indent: 0; }
 
 .btn:hover::before {
   color: #77A131;
@@ -353,6 +346,15 @@ header {
     font-size: 12px;
     line-height: 1.7; }
 
+.banner-content .btn {
+  width: 30%; }
+  .banner-content .btn::before {
+    font-family: "FontAwesome";
+    content: "";
+    color: #fff;
+    font-size: 10px;
+    text-indent: 0; }
+
 /*=================================
   Banner styling ends here
 =================================*/
@@ -481,5 +483,115 @@ header {
 /*=================================
   trending styling ends here
 =================================*/
+.fresh-veggies {
+  padding-top: 100px;
+  background-color: #F9F7F4; }
+  .fresh-veggies .veggies {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+
+.veggie-img {
+  position: relative;
+  height: 263px;
+  width: 100%;
+  flex-basis: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.lemon:before {
+  content: "";
+  background-image: url("../images/product11-free-img.jpeg");
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px; }
+
+.cabbage:before {
+  content: "";
+  background-image: url("../images/product13-free-img.jpeg");
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px; }
+
+.peas:before {
+  content: "";
+  background-image: url("../images/product17-free-img.jpeg");
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px; }
+
+.veggie-content {
+  position: relative;
+  left: 5px;
+  bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center; }
+  .veggie-content h3 {
+    font-family: serif;
+    font-size: 18px;
+    font-weight: 600; }
+  .veggie-content p {
+    color: #373737;
+    font-size: 12px;
+    line-height: 1.5; }
+
+.veggie-content .btn {
+  width: 35%; }
+  .veggie-content .btn::after {
+    font-family: "FontAwesome";
+    content: "";
+    color: #fff;
+    font-size: 10px;
+    text-indent: 0; }
+
+.discount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+  background-color: #000;
+  color: #fff; }
+  .discount h3 {
+    font-family: serif;
+    font-size: 25px;
+    font-weight: 600; }
+
+.discount .btn::before {
+  font-family: "FontAwesome";
+  content: "";
+  color: #fff;
+  font-size: 10px;
+  text-indent: 0; }
+
+.tryfree {
+  padding: 20px 0;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: serif;
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

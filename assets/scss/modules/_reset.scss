@@ -204,7 +204,6 @@ li {
 
 // for all
 .btn {
-  width: 25%;
   display: flex;
   gap: 15px;
   padding: 10px 15px;
@@ -220,10 +219,6 @@ li {
     border: 1px solid $darkPalegreen;
     background-color: transparent;
     color: $darkPalegreen;
-  }
-
-  &::before {
-    @include icon-style("\f07a", $white, 10px);
   }
 }
 
