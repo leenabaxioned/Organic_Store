@@ -1,0 +1,13 @@
+header {
+    .wrapper {
+        width: 96%;
+       @include flex-styling(space-between, center);
+    }
+}
+
+.head_nav .nav-menu,
+.nav_about {
+  @include flex-styling(space-between, center);
+}
+
+.hamburger { display: none; }
