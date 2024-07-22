@@ -2,7 +2,7 @@
   padding-top: 100px;
   background-color: $offwhite;
 
-  .veggies {
+  .veggies .wrapper {
     @include flex-styling(space-between, center);
   }
 }
@@ -90,10 +90,13 @@
 }
 
 .discount {
-  @include flex-styling(space-between, center);
-  padding: 40px 0;
-  background-color: $black;
-  color: $white;
+    background-color: $black;
+  .wrapper {
+    @include flex-styling(space-between, center);
+    padding: 40px 0;
+    margin: 30px auto;
+    color: $white;
+  }
 
   h3 {
     font-family: serif;
@@ -103,15 +106,15 @@
 }
 
 .discount .btn {
-    &::before {
-      @include icon-style("\f07a", $white, 10px);
-    }
+  &::before {
+    @include icon-style("\f07a", $white, 10px);
   }
+}
 
-  .tryfree {
-    padding: 20px 0;
-    font-size: 20px;
-    font-weight: 600;
-    font-family: serif;
-    text-align: center;
-  }
+.tryfree .wrapper {
+  padding: 20px 0;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: serif;
+  text-align: center;
+}

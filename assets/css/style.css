@@ -486,7 +486,7 @@ header {
 .fresh-veggies {
   padding-top: 100px;
   background-color: #F9F7F4; }
-  .fresh-veggies .veggies {
+  .fresh-veggies .veggies .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center; }
@@ -569,12 +569,14 @@ header {
     text-indent: 0; }
 
 .discount {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 40px 0;
-  background-color: #000;
-  color: #fff; }
+  background-color: #000; }
+  .discount .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    margin: 30px auto;
+    color: #fff; }
   .discount h3 {
     font-family: serif;
     font-size: 25px;
@@ -587,7 +589,7 @@ header {
   font-size: 10px;
   text-indent: 0; }
 
-.tryfree {
+.tryfree .wrapper {
   padding: 20px 0;
   font-size: 20px;
   font-weight: 600;
