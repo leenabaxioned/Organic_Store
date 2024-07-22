@@ -1,13 +1,89 @@
 header {
-    .wrapper {
-        width: 96%;
-       @include flex-styling(space-between, center);
+  padding: 15px 0;
+
+  .wrapper {
+    @include flex-styling(space-between, center);
+    width: 96%;
+    font-size: 12px;
+  }
+
+  a {
+    color: $darkgrey;
+    transition: all 0.5s;
+
+    &:hover {
+      color: $palegreen;
     }
+  }
 }
 
-.head_nav .nav-menu,
+.logo-nav,
+.head_nav .nav_menu,
 .nav_about {
   @include flex-styling(space-between, center);
 }
 
-.hamburger { display: none; }
+.head_nav .nav_menu {
+  justify-content: normal;
+  gap: 25px;
+}
+
+.nav_about {
+  flex-basis: 16%;
+}
+
+.logo-nav {
+  flex-basis: 35%;
+  gap: 25px;
+  justify-content: normal;
+  h1 {
+    flex-basis: 23%;
+  }
+}
+
+.about_menu,
+.addto-cart {
+  display: flex;
+  gap: 20px;
+}
+
+.addto-cart {
+  a {
+    color: $palegreen;
+  }
+
+  .cart-bag {
+    position: relative;
+    display: flex;
+    text-indent: -9999px;
+
+    &::before {
+      position: absolute;
+      bottom: 10px;
+      right: -10px;
+      @include flex-styling(center, center);
+      width: 12px;
+      height: 12px;
+      background: $palegreen;
+      border-radius: 50%;
+      @include icon-style("\30", $black, 10px);
+    }
+
+    &::after {
+      @include icon-style("\f291", $palegreen, 10px);
+    }
+  }
+}
+
+.user {
+  display: flex;
+  text-indent: -9999px;
+
+  &:after {
+    @include icon-style("\f007", $black, 15px);
+  }
+}
+
+.hamburger {
+  display: none;
+}

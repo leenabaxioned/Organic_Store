@@ -192,9 +192,48 @@ li {
   list-style-type: none;
 }
 
+@import 'variable';
+@import 'mixins';
+
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
   width: 63%;
   margin: 0 auto;
+}
+
+// for all
+.btn {
+  width: 25%;
+  display: flex;
+  gap: 15px;
+  padding: 10px 15px;
+  border: 1px solid $palegreen;
+  border-radius: 5px;
+  background-color: $darkPalegreen;
+  color: $white;
+  font-size: 11px;
+  text-transform: uppercase;
+  transition: all 0.3s;
+
+  &:hover {
+    border: 1px solid $darkPalegreen;
+    background-color: transparent;
+    color: $darkPalegreen;
+  }
+
+  &::before {
+    @include icon-style("\f07a", $white, 10px);
+  }
+}
+
+.btn:hover::before { 
+  color: $darkPalegreen;
+  transition: all 0.3s;
+ }
+
+.logoleaf {
+  display: block;
+  width: 40%;
+  object-fit: cover;
 }

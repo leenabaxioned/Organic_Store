@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ==========================================================================
    1. CSS Reset Code
    ========================================================================== */
@@ -179,19 +180,168 @@ li {
   width: 63%;
   margin: 0 auto; }
 
-header .wrapper {
-  width: 96%;
+.btn {
+  width: 25%;
   display: flex;
-  justify-content: space-between;
-  align-items: center; }
+  gap: 15px;
+  padding: 10px 15px;
+  border: 1px solid #A0CE51;
+  border-radius: 5px;
+  background-color: #77A131;
+  color: #fff;
+  font-size: 11px;
+  text-transform: uppercase;
+  transition: all 0.3s; }
+  .btn:hover {
+    border: 1px solid #77A131;
+    background-color: transparent;
+    color: #77A131; }
+  .btn::before {
+    font-family: "FontAwesome";
+    content: "";
+    color: #fff;
+    font-size: 10px;
+    text-indent: 0; }
 
-.head_nav .nav-menu,
+.btn:hover::before {
+  color: #77A131;
+  transition: all 0.3s; }
+
+.logoleaf {
+  display: block;
+  width: 40%;
+  object-fit: cover; }
+
+header {
+  padding: 15px 0; }
+  header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 96%;
+    font-size: 12px; }
+  header a {
+    color: #4D4D4D;
+    transition: all 0.5s; }
+    header a:hover {
+      color: #A0CE51; }
+
+.logo-nav,
+.head_nav .nav_menu,
 .nav_about {
   display: flex;
   justify-content: space-between;
   align-items: center; }
 
+.head_nav .nav_menu {
+  justify-content: normal;
+  gap: 25px; }
+
+.nav_about {
+  flex-basis: 16%; }
+
+.logo-nav {
+  flex-basis: 35%;
+  gap: 25px;
+  justify-content: normal; }
+  .logo-nav h1 {
+    flex-basis: 23%; }
+
+.about_menu,
+.addto-cart {
+  display: flex;
+  gap: 20px; }
+
+.addto-cart a {
+  color: #A0CE51; }
+.addto-cart .cart-bag {
+  position: relative;
+  display: flex;
+  text-indent: -9999px; }
+  .addto-cart .cart-bag::before {
+    position: absolute;
+    bottom: 10px;
+    right: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12px;
+    height: 12px;
+    background: #A0CE51;
+    border-radius: 50%;
+    font-family: "FontAwesome";
+    content: "0";
+    color: #000;
+    font-size: 10px;
+    text-indent: 0; }
+  .addto-cart .cart-bag::after {
+    font-family: "FontAwesome";
+    content: "";
+    color: #A0CE51;
+    font-size: 10px;
+    text-indent: 0; }
+
+.user {
+  display: flex;
+  text-indent: -9999px; }
+  .user:after {
+    font-family: "FontAwesome";
+    content: "";
+    color: #000;
+    font-size: 15px;
+    text-indent: 0; }
+
 .hamburger {
   display: none; }
+
+.banner-img {
+  position: relative;
+  height: 540px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end; }
+  .banner-img:before {
+    content: "";
+    background-image: linear-gradient(rgba(255, 254, 254, 0.904), #fcfcfc), url("../images/leaves-free-img.png");
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px; }
+
+.banner-content {
+  position: relative;
+  left: 15px;
+  bottom: 65px; }
+  .banner-content .wrapper {
+    gap: 55px;
+    display: flex;
+    justify-content: normal;
+    align-items: center; }
+
+.organic-productContent {
+  flex-basis: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #000; }
+  .organic-productContent span {
+    font-family: serif;
+    font-size: 15px;
+    font-weight: 600; }
+  .organic-productContent h2 {
+    font-family: serif;
+    font-size: 40px;
+    font-weight: 600; }
+  .organic-productContent p {
+    color: #555454;
+    font-size: 12px;
+    line-height: 1.7; }
 
 /*# sourceMappingURL=style.css.map */
